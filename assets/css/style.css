@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+:root {
+    --pink: #f3c2b8;
+    --orange: #db7b65;
+    --yellow: #e4b162;
+    --blue: #2b6a70;
+    --purple: #75566b;
+
+}
+body {
+    font-family: 'Playfair Display', Times, 'Times New Roman', serif;
+    background-color: var(--purple)
+    
+}
+
+/* <HEADER> STYLES */
+header {
+    padding: 1.25rem 2.1875rem;
+    background-color: var(--yellow);
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    position: sticky;
+    position: -webkit-sticky;
+    text-shadow: 0 0 .25em rgba(0, 0, 0, 0.25);
+
+    
+}
+header h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: var(--yellow);
+    margin: 0;
+    text-decoration: none;
+}
+header a {
+    text-decoration: none;
+    color: var(--blue);; 
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+header nav ul li {
+    margin: 0 1.875rem;
+    font-weight: lighter;
+    font-size: 1.375rem;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
