@@ -44,7 +44,7 @@ header {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    text-shadow: 0 0 .25em rgba(0, 0, 0, 0.25);
+    text-shadow: 0 0 .125em rgba(0, 0, 0, 0.25);
     border-bottom: 2px solid rgba(228, 81, 76,100%); 
 }
 
@@ -84,14 +84,19 @@ header nav ul li {
         color: var(--blue);
     }
 
+section h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.5rem;
+    color: var(--red);
+    text-shadow: 0 0 .125rem rgba(0, 0, 0, 0.25);
+}
+
 /* ABOUT ME SECTION STYLES */
 .about-me {
-    margin: 2rem 1rem 2rem 4rem;
+    margin: 2rem 1.5rem 2rem 4rem;
 }
 
 .about-me h2 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 2.5rem; 
     text-align: right;
     color: var(--red);
 }
@@ -111,6 +116,11 @@ header nav ul li {
 .about-me img {
     max-width: 100%;
     height: 20rem;
+}
+
+/* WORK SECTION */
+.work {
+    margin: 2rem 4rem 2rem 1.5rem;
 }
 
 
