@@ -30,10 +30,27 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    color: var(--blue)
 }
 #background-transparent {
     background-color:rgba(216, 212, 232, 90%);
 
+}
+
+a:link{
+    text-decoration: none;
+}
+a:link:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;;
+}
+a {
+    color: var(--blue);
 }
 
 /* <HEADER> STYLES */
@@ -57,7 +74,6 @@ header h1 {
     background-color: var(--purple)
 }
 header a {
-    text-decoration: none;
     color: var(--red); 
 }
 header nav ul {
@@ -87,6 +103,8 @@ header nav ul li {
         margin-left: 1.5rem;
     }
 
+/* MULTIPLE-SECTION STYLES */
+
 section h2 {
     font-family: 'DM Serif Display', serif;
     font-size: 2.5rem;
@@ -95,15 +113,20 @@ section h2 {
     padding-bottom: 1rem;
 }
 
-/* ABOUT ME SECTION STYLES */
-.about-me {
+.h2-right {
+    text-align: right;
+}
+
+.about-me, .contact-me {
     margin: 2rem 1.5rem 2rem 4rem;
 }
 
-.about-me h2 {
-    text-align: right;
-    color: var(--red);
+.work, .resume {
+    margin: 2rem 4rem 2rem 1.5rem;
 }
+
+/* ABOUT ME SECTION STYLES */
+
 
 .about-content-wrapper {
     display: flex;
@@ -125,17 +148,13 @@ section h2 {
 
 /* WORK SECTION */
 
-.work {
-    margin: 2rem 4rem 2rem 1.5rem;
-}
-
 .work-flex-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.work article {
+.work article a {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -152,6 +171,7 @@ section h2 {
 
 }
 
+/* CONTACT SECTION STYLES */
 
 
 /* MEDIA QUERIES */
