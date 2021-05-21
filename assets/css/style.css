@@ -1,19 +1,17 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html {
-    font-size: 16px;
-    scroll-behavior: smooth;
-    
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 :root {
-    --blue: #1f8bdd;
-    --red: rgb(228, 81, 76);
-    --purple: rgb(216, 212, 232);
-    --grey: #9b98aa;
-
+  --blue: #1f8bdd;
+  --red: rgb(228, 81, 76);
+  --purple: rgb(216, 212, 232);
+  --grey: rgb(155, 152, 170);
 }
 /* :root {
     --pink: #f3c2b8;
@@ -23,155 +21,195 @@ html {
     --purple: #75566b;
 } */
 
-
 body {
-    font-family: 'Space Mono', monospace; 
-    background-image: url(../images/aesthetic-minimal-white-grid-pattern-wallpaper.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    color: var(--blue)
-}
-#background-transparent {
-    background-color:rgba(216, 212, 232, 90%);
-
+  font-family: "Space Mono", monospace;
+  color: var(--blue);
+  background-color:rgba(216, 212, 232, 90%);
+  background-image: url(../images/aesthetic-minimal-white-grid-pattern-wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
-a:link{
-    text-decoration: none;
+.background-transparent {
+  background-color: rgba(216, 212, 232, 90%);
+  padding-bottom: 2rem;
+} */
+
+a:link {
+  text-decoration: none;
 }
 a:link:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 a:active {
-    text-decoration: none;;
+  text-decoration: none;
 }
 a {
-    color: var(--blue);
+  color: var(--blue);
+  text-decoration: none;
 }
 
 /* <HEADER> STYLES */
 header {
-    padding: 1.25rem 2.1875rem;
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0;
-    text-shadow: 0 0 .125em rgba(0, 0, 0, 0.25);
-    border-bottom: 2px solid rgba(228, 81, 76,100%); 
+  padding: 1.25rem 2.1875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  position: -webkit-sticky;
+  overflow: auto;
+  top: 0;
+  text-shadow: 0 0 0.125em rgba(0, 0, 0, 0.25);
+  border-bottom: 2px solid rgba(228, 81, 76, 100%);
+  background-image: linear-gradient(rgba(216, 212, 232, 100%), rgba(216, 212, 232, 40%) );
+  /* background-image: url(../images/aesthetic-minimal-white-grid-pattern-wallpaper.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
 }
 
 header h1 {
-    font-weight: bold;
-    font-size: 2rem;
-    margin: 0;
-    text-decoration: none;
-    background-color: var(--purple)
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0;
+  text-decoration: none;
 }
-header a {
-    color: var(--red); 
-}
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: var(--purple)
 
+header a {
+  color: var(--red);
+}
+
+header a:hover,
+section h2:hover {
+  text-shadow: 0.15rem 0.15rem 0 var(--blue), -0.15rem -0.15rem 0 white;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 header nav ul li {
-    margin: 0 1.875rem;
-    font-weight: lighter;
-    font-size: 1.375rem;
-    list-style: none;
+  margin: 0 1.875rem;
+  font-weight: lighter;
+  font-size: 1.375rem;
+  list-style: none;
 }
 
 /* HERO STYLES */
-    .hero h1 {
-        font-family: "DM Serif Display", serif;
-        position: flex;
-        flex-wrap: wrap;
-        font-size: 20vw;
-        line-height: 1.25;
-        color: var(--blue);
-        padding-bottom: 3rem;
-        margin-left: 1.5rem;
-    }
+.hero h1 {
+  font-family: "DM Serif Display", serif;
+  position: flex;
+  flex-wrap: wrap;
+  font-size: 20vw;
+  line-height: 1.25;
+  color: var(--blue);
+  padding-bottom: 3rem;
+  margin-left: 1.5rem;
+}
 
 /* MULTIPLE-SECTION STYLES */
 
 section h2 {
-    font-family: 'DM Serif Display', serif;
-    font-size: 2.5rem;
-    color: var(--red);
-    text-shadow: 0 0 .125rem rgba(0, 0, 0, 0.25);
-    padding-bottom: 1rem;
+  font-family: "DM Serif Display", serif;
+  font-size: 2.5rem;
+  color: var(--red);
+  text-shadow: 0 0 0.125rem rgba(0, 0, 0, 0.25);
+  padding-bottom: 2rem;
 }
 
 .h2-right {
-    text-align: right;
+  text-align: right;
 }
 
-.about-me, .contact-me {
-    margin: 2rem 1.5rem 2rem 4rem;
+.about-me,
+.contact-me {
+  margin: 2rem 1.5rem 2rem 4rem;
 }
 
-.work, .resume {
-    margin: 2rem 4rem 2rem 1.5rem;
+.work {
+  margin: 2rem 4rem 2rem 1.5rem;
+}
+
+img:hover {
+  box-shadow: 0.5rem 0.5rem 0 var(--red), -0.5rem -0.5rem 0 var(--blue);
+  margin: 0;
+  padding: 0;
 }
 
 /* ABOUT ME SECTION STYLES */
 
-
 .about-content-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 .about-me p {
-   display: flex;
-   flex: 1;
-   padding-right: 1rem;
+  display: flex;
+  flex: 1;
+  padding-right: 1rem;
 }
 .about-me img {
-    max-width: 100%;
-    height: 20rem;
+  max-width: 100%;
+  height: 20rem;
 }
 
 /* WORK SECTION */
 
 .work-flex-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .work article a {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1.5rem;
 }
 .work img {
-    width: 300px;
-    height: 200px;
+  width: 300px;
+  height: 200px;
 }
 
 .work h3 {
-    line-height: 2;
-
+  line-height: 2;
 }
 
 /* CONTACT SECTION STYLES */
 
+.contact-flex-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.contact-me a {
+  text-decoration: underline;
+}
+.contact-me a:hover {
+  text-shadow: 0.1rem 0.1rem 0 var(--red), -0.1rem -0.1rem 0 white;
+}
+
+/* FOOTER STYLES */
+footer {
+  background-color: rgb(216, 212, 232);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1.5rem 1.5rem 0 1.5rem;
+  padding: 1.5rem
+}
 /* MEDIA QUERIES */
