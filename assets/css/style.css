@@ -5,6 +5,7 @@
 }
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
     
 }
 :root {
@@ -82,6 +83,8 @@ header nav ul li {
         font-size: 20vw;
         line-height: 1.25;
         color: var(--blue);
+        padding-bottom: 3rem;
+        margin-left: 1.5rem;
     }
 
 section h2 {
@@ -89,6 +92,7 @@ section h2 {
     font-size: 2.5rem;
     color: var(--red);
     text-shadow: 0 0 .125rem rgba(0, 0, 0, 0.25);
+    padding-bottom: 1rem;
 }
 
 /* ABOUT ME SECTION STYLES */
@@ -106,6 +110,7 @@ section h2 {
     flex-wrap: wrap;
     align-items: center;
     flex-direction: row-reverse;
+    justify-content: space-between;
 }
 
 .about-me p {
@@ -119,8 +124,32 @@ section h2 {
 }
 
 /* WORK SECTION */
+
 .work {
     margin: 2rem 4rem 2rem 1.5rem;
+}
+
+.work-flex-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.work article {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+.work img {
+    width: 300px;
+    height: 200px;
+}
+
+.work h3 {
+    line-height: 2;
+
 }
 
 
